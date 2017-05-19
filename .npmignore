@@ -1,0 +1,11 @@
+*.coffee
+.DS_Store
+.git
+.gitignore
+
+benchmark/
+build/
+coverage/
+docs/
+examples/
+test/

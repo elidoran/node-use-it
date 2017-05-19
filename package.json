@@ -1,0 +1,46 @@
+{
+  "name": "@use/it",
+  "version": "0.1.0",
+  "description": "Simple use() function for easy plugin ability.",
+  "main": "lib",
+  "keywords": [
+    "use",
+    "using",
+    "plugin",
+    "plugins",
+    "extend",
+    "modular",
+    "load",
+    "enhance",
+    "addon"
+  ],
+  "author": "Eli Doran <eli+npm@elidoran.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register --reporter spec --bail --check-leaks test/lib",
+    "test4": "nave use 4.8 npm test",
+    "test6": "nave use 6.10 npm test",
+    "test7": "nave use 7.10 npm test",
+    "test-all": "npm run test4 && npm run test6 && npm run test7",
+    "coverage": "istanbul cover _mocha -- --compilers coffee:coffee-script/register -R spec test/lib",
+    "coverage-lcov": "istanbul cover _mocha --report lcovonly -- --compilers coffee:coffee-script/register -R spec test/lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elidoran/node-use-it.git"
+  },
+  "bugs": "http://github.com/elidoran/node-use-it/issues",
+  "devDependencies": {
+    "coffee-script": "^1.12.6",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.1",
+    "mocha-lcov-reporter": "^1.3.0"
+  },
+  "dependencies": {
+    "@flatten/array": "^1.1.1"
+  },
+  "engines": {
+    "node": ">=4"
+  }
+}
