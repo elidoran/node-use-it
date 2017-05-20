@@ -1,5 +1,6 @@
 assert = require 'assert'
 corepath = require 'path'
+equal = require 'deep-eql'
 
 use = require '../../lib'
 
@@ -61,14 +62,19 @@ describe 'test use', ->
 
   it 'should process array as multiple plugins', ->
 
+    options = some: 'options'
     called = false
+    calledOptions = null
     array = [
       '../helpers/plugin.coffee'
-      (options) -> called = true
+      (options) -> called = true ; calledOptions = options
       '../helpers/plugin2.coffee'
     ]
     thing = {}
     thing.use = use
-    result = thing.use array, {}, __dirname
+    result = thing.use array, options, __dirname
     assert.equal result?.error, null
     assert called
+    assert.equal calledOptions.some, options.some
+    # NOTE: assert.deepEqual fails here ... so, use a real equal test.
+    assert equal calledOptions, options
