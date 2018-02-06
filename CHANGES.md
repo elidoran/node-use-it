@@ -1,3 +1,7 @@
+## 0.2.2 - 2018/02/05
+
+1. update coveralls and deep-eql to newest major versions (missed it in recent update)
+
 ## 0.2.1 - 2018/02/05
 
 1. update deps
