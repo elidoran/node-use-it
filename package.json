@@ -32,8 +32,8 @@
   "bugs": "http://github.com/elidoran/node-use-it/issues",
   "devDependencies": {
     "coffee-script": "^1.12.7",
-    "coveralls": "^2.13.3",
-    "deep-eql": "^2.0.2",
+    "coveralls": "^3.0.0",
+    "deep-eql": "^3.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^5.0.0",
     "mocha-lcov-reporter": "^1.3.0"
