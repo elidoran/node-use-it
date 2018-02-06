@@ -1,6 +1,6 @@
 {
   "name": "@use/it",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Simple use() function for easy plugin ability.",
   "main": "lib",
   "keywords": [
