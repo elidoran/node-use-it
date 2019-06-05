@@ -1,3 +1,10 @@
+## 0.2.3 -
+
+1. update deps
+2. fix vulnerabilities
+3. move nodes to 6-12
+4. add 3 OS's to Travis CI
+
 ## 0.2.2 - 2018/02/05
 
 1. update coveralls and deep-eql to newest major versions (missed it in recent update)
