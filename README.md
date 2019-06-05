@@ -1,6 +1,5 @@
 # @use/it
 [![Build Status](https://travis-ci.org/elidoran/node-use-it.svg?branch=master)](https://travis-ci.org/elidoran/node-use-it)
-[![Dependency Status](https://gemnasium.com/elidoran/node-use-it.png)](https://gemnasium.com/elidoran/node-use-it)
 [![npm version](https://badge.fury.io/js/%40use%2Fit.svg)](http://badge.fury.io/js/%40use%2Fit)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/node-use-it/badge.svg?branch=master)](https://coveralls.io/github/elidoran/node-use-it?branch=master)
 
